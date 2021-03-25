@@ -1,15 +1,19 @@
-html{
-    margin: 0;
-    padding:0;
+html {
+  margin: 0;
+  padding: 0;
 }
-body{
-    margin: 0;
-    padding:0;
+body {
+  margin: 0;
+  padding: 0;
+  color: white;
 }
 
 .bg-video {
-    position:fixed;
-    z-index: -1;
-    width:100%;     
-    height: auto;
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+  height: auto;
+  background-color: rgba(248, 247, 216, 0.7);
+  top: 0;
+  left: 0;
 }
