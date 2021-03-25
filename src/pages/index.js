@@ -5,7 +5,7 @@ import "../index.css"
 import Header from "../components/Header"
 export default function Home() {
   return (
-    <div>
+    <div className="outer">
       <Background />
       <Header headerText="Hi I'm Ankit Kumar Gupta" />
     </div>

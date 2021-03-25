@@ -8,12 +8,58 @@ body {
   color: white;
 }
 
-.bg-video {
+/* .bg-video {
   position: fixed;
   z-index: -1;
   width: 100%;
   height: auto;
-  background-color: rgba(248, 247, 216, 0.7);
   top: 0;
   left: 0;
+}
+.overlay {
+  height: auto;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  background-color: rgba(0, 0, 0, 0.5);
+} */
+.bg-video:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  background: linear-gradient(
+    to right,
+    rgba(65, 0, 255, 0.4),
+    rgba(255, 0, 232, 0.3)
+  );
+}
+.bg-video {
+  left: 0%;
+  top: 0%;
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+.outer {
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+}
+.home-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #fff;
+  z-index: 1;
 }
