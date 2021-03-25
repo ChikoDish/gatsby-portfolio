@@ -1,5 +1,5 @@
 import React from "react"
-import Leaf from "../../public/videos/leavs.mp4"
+import Leaf from "../videos/leavs.mp4"
 const Background = () => {
   return (
     <video className="bg-video" autoPlay muted loop>
